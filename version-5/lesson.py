@@ -1,10 +1,18 @@
 """
-AS91896: HiWonder Robot Manuevering 
+AS91896: HiWonder Robot Manuevering
 By Kaedyn Eastall : Version 5 (I think)
 """
 
 # Robot movement and sensors
 from lesson_header import *
+
+# Importing core_actions page
+from core_actions import *
+from core_actions import dict_moves as d_m
+
+# Import DateTime
+from datetime import datetime as clock
+now = clock.now()
 
 # Cup counter (starting at 0)
 cups = 0
@@ -14,14 +22,6 @@ SAFE_DIST = 15
 
 # Define dict_logs as an empty dictionary
 dict_logs = {}
-
-# Import DateTime
-from datetime import datetime as clock
-now = clock.now()
-
-# Importing core_actions page
-from core_actions import *
-from core_actions import dict_moves as d_m
 
 # Print when starting movement
 print("[DEBUG] Movement Starting")
